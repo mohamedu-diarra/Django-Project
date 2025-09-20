@@ -1,10 +1,11 @@
 {% extends 'myapp/base.html' %}
+
 {% block content %}
 <h2>Delete Student</h2>
-<p>Are you sure you want to delete {{ student.name }}?</p>
+<p>Are you sure you want to delete "{{ student.name }}"?</p>
 <form method="post">
-  {% csrf_token %}
-  <button type="submit" class="btn btn-danger">Yes, delete</button>
-  <a href="{% url 'student_list' %}" class="btn btn-secondary">Cancel</a>
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Yes, delete</button>
+    <a href="{% url 'student_list' %}" class="btn">Cancel</a>
 </form>
 {% endblock %}

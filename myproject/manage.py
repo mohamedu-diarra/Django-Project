@@ -18,5 +18,5 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-if _n == "_main_":
+if _ == "_main_":
     main()

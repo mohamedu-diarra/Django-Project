@@ -18,5 +18,5 @@ def main():
     execute_from_command_line(sys.argv)
 
 
-"_main_":
+main_":
     main()
